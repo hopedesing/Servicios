@@ -1,0 +1,46 @@
+/* HOPE · Design tokens */
+:root {
+  color-scheme: light;
+
+  /* Paleta de marca */
+  --black: #000000;
+  --white: #ffffff;
+  --magenta: #D92BEF;
+  --lavender: #F4EAFE;
+  --gray: #F5F5F5;
+
+  /* Derivados (solo matices de la paleta) */
+  --ink: #0b0b0c;
+  --ink-2: #4a4a50;          /* texto secundario sobre claro (AA) */
+  --ink-3: #75757c;
+  --line: rgba(0, 0, 0, 0.09);
+  --line-strong: rgba(0, 0, 0, 0.18);
+  --magenta-soft: rgba(217, 43, 239, 0.12);
+  --magenta-deep: #b31fc6;   /* magenta para texto pequeño sobre claro */
+  --on-dark-2: rgba(255, 255, 255, 0.68);
+  --error: #c0124b;
+
+  /* Tipografía */
+  --font-display: 'Poppins', 'Manrope', system-ui, sans-serif;
+  --font-body: 'Inter', 'Manrope', system-ui, -apple-system, sans-serif;
+
+  --fs-hero: clamp(2.6rem, 9.5vw, 5.2rem);
+  --fs-h2: clamp(1.9rem, 5.6vw, 3.4rem);
+  --fs-h3: clamp(1.2rem, 2.6vw, 1.45rem);
+  --fs-lead: clamp(1.05rem, 2.2vw, 1.25rem);
+
+  /* Espacio y forma */
+  --gutter: clamp(1rem, 4vw, 2rem);
+  --section: clamp(4.5rem, 11vw, 8.5rem);
+  --radius-sm: 12px;
+  --radius: 20px;
+  --radius-lg: 32px;
+  --max: 1200px;
+
+  /* Movimiento */
+  --ease: cubic-bezier(0.22, 1, 0.36, 1);
+  --t-fast: 180ms;
+  --t: 420ms;
+
+  --header-h: 68px;
+}

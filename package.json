@@ -1,0 +1,14 @@
+{
+  "name": "hope-web",
+  "version": "1.0.0",
+  "private": true,
+  "description": "HOPE · Dale forma a lo que imaginas — sitio comercial con catálogo y cotizaciones",
+  "type": "module",
+  "scripts": {
+    "dev": "node server.mjs",
+    "start": "node server.mjs"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
