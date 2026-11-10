@@ -5,24 +5,7 @@
  * Para cambiar un precio, modifica `priceFrom` (número, sin puntos).
  *   priceFrom: 250000   → se muestra "Desde $250.000"
  *   priceFrom: null     → se muestra "Precio a la medida"
- *
- * Para agregar un servicio, copia un objeto completo y ajusta sus campos.
- *
- *  id            identificador único (sin espacios)
- *  name          nombre comercial
- *  line          línea: 'web' | 'creative' | 'data'
- *  icon          clave de js/lib/icons.js
- *  priceFrom     precio base en COP, o null si es a la medida
- *  priceSuffix   texto opcional tras el precio (ej. '/ mes')
- *  summary       descripción corta
- *  forWhat       (opcional) tipos de uso
- *  base          lo que cubre el precio base (lista corta, siempre visible)
- *  delivery      tiempo de entrega
- *  includes      lo que PUEDE incluir según el proyecto (lista desplegable)
- *  extra         (opcional) opción adicional destacada
- *  cta           texto del botón
- *  formOption    servicio que se preselecciona en el formulario (ver QUOTE_OPTIONS)
- *  whatsapp      mensaje de WhatsApp propio del servicio
+ * El campo `whatsapp` es el mensaje que se envía desde cada servicio.
  */
 export const SERVICES = [
   /* ---------------- WEB ---------------- */
@@ -43,7 +26,7 @@ export const SERVICES = [
     },
     cta: 'Cotizar mi evento',
     formOption: 'event',
-    whatsapp: 'Hola HOPE 👋 Quiero una invitación web para mi evento y quisiera conocer el precio.',
+    whatsapp: 'Hola, buen día. Me interesa una invitación web para un evento. ¿Me podrían compartir qué incluye el servicio, los tiempos de entrega y una cotización?',
   },
   {
     id: 'business',
@@ -61,7 +44,7 @@ export const SERVICES = [
     },
     cta: 'Quiero mi página web',
     formOption: 'business',
-    whatsapp: 'Hola HOPE 👋 Estoy interesado/a en una página web para mi negocio y quisiera conocer el precio.',
+    whatsapp: 'Hola, buen día. Me interesa una página web para mi negocio. ¿Me podrían compartir qué incluye el servicio, los tiempos de entrega y una cotización?',
   },
 
   /* ---------------- CREATIVE ---------------- */
@@ -78,7 +61,7 @@ export const SERVICES = [
     includes: ['Conceptos creativos', 'Historias', 'Carruseles', 'Adaptación a cada red'],
     cta: 'Quiero contenido',
     formOption: 'content',
-    whatsapp: 'Hola HOPE 👋 Me interesa el servicio de contenido para redes y quisiera conocer el precio.',
+    whatsapp: 'Hola, buen día. Me interesa el servicio de contenido mensual para redes sociales. ¿Me podrían compartir qué incluye el plan y una cotización?',
   },
   {
     id: 'commercial',
@@ -92,7 +75,7 @@ export const SERVICES = [
     includes: ['Estructura narrativa', 'Voz en off', 'Subtítulos', 'Versiones cortas para historias'],
     cta: 'Quiero un comercial',
     formOption: 'commercial',
-    whatsapp: 'Hola HOPE 👋 Quiero un video comercial para mi negocio y quisiera conocer el precio.',
+    whatsapp: 'Hola, buen día. Me interesa un video comercial para mi negocio. ¿Me podrían compartir qué incluye el servicio, los tiempos de entrega y una cotización?',
   },
 
   /* ---------------- DATA ---------------- */
@@ -108,7 +91,7 @@ export const SERVICES = [
     includes: ['Power BI o Looker Studio', 'Limpieza y organización de datos', 'Análisis de resultados', 'Actualización automática'],
     cta: 'Quiero mi dashboard',
     formOption: 'dashboard',
-    whatsapp: 'Hola HOPE 👋 Quiero un dashboard para organizar mi información y quisiera conocer el precio.',
+    whatsapp: 'Hola, buen día. Me interesa un dashboard para organizar y analizar la información de mi negocio. ¿Me podrían compartir qué incluye el servicio y una cotización?',
   },
   {
     id: 'tools',
@@ -123,7 +106,7 @@ export const SERVICES = [
     includes: ['Notificaciones por correo', 'Acceso con contraseña', 'Reportes descargables', 'Conteos en tiempo real'],
     cta: 'Cotizar mi herramienta',
     formOption: 'tools',
-    whatsapp: 'Hola HOPE 👋 Necesito una herramienta a la medida (inscripciones, votaciones o agenda) y quisiera conocer el precio.',
+    whatsapp: 'Hola, buen día. Me interesa una herramienta web a la medida (inscripciones, votaciones o agenda). ¿Podríamos conversar sobre el alcance y una cotización?',
   },
 ];
 
