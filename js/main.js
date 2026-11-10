@@ -108,7 +108,7 @@ function initModal() {
   });
   return (data) => {
     const wa = $('[data-modal-wa]', dlg);
-    const href = waLink(`Hola HOPE 👋 Soy ${data.name}. Acabo de enviar una solicitud de cotización (${data.service}) desde su página.`);
+    const href = waLink(`Hola, buen día. Mi nombre es ${data.name}. Acabo de enviar una solicitud de cotización desde su página web para el servicio: ${data.service}. Quedo atento(a) a su respuesta.`);
     if (href) { wa.href = href; wa.hidden = false; } else wa.hidden = true;
     dlg.showModal();
   };
